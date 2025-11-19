@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ROMAISSY">
+    <meta name="description" content="Demo single page">
+    <meta name="keywords" content="gallery furniture caoch leather work reception living room office">
+    <title>Gallery</title>
+
+    <!-- Link -->
+    <link rel="icon" href="img/1198317.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- STYLE -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+
+</head>
+
+<body class="" style="height: auto;">
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR START -->
+        <!-- <nav class="navbar navbar-expand-lg bg-body-light bg-white fixed-top" style="min-height: 170px;" id="navbarJs">
+            <div class="container d-flex mt-4 " id="navBar">
+                <h2><a class="navbar-brand fs-1 fw-bolder link-success" style="font-family: Michroma;" href="#">Your
+                        Blog <span class="fst-italic" style="font-family: Edu QLD Hand;">Name</span></a>
+                </h2>
+                <button id="navBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: Roboto;">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-4 fw-semibold link-success" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 fw-semibold link-success" href="#">About</a>
+                        </li>
+
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Categories</a></li>
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Features</a></li>
+                        <li>
+                        </li>
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Contact</a></li>
+                        <li>
+                            <form class="d-flex fw-semibold link-success" role="search">
+                                <input class="form-control me-2 rounded-5 w-100 mx-4 text-center " type="search"
+                                    placeholder="&#128269; Search" aria-label="Search">
+                            </form>
+                        </li>
+
+                    </ul>
+                    <button class="rounded-circle btn btn-light border border-1  mx-1" id="btnDark">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button class="rounded-circle btn btn-primary border border-1  mx-1" id="btnlight">
+                        <i class="bi bi-brightness-high"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+ -->
+        <nav id="navBar" class="navbar navbar-expand-lg bg-white fixed-top py-0" style="min-height: 170px;">
+            <div class="container">
+                <h2><a class="navbar-brand fs-1 fw-bolder link-success" style="font-family: Michroma;" href="#">Your
+                        Blog <span class="fst-italic" style="font-family: Edu QLD Hand;">Name</span></a>
+                </h2>
+                <button id="navBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-2" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-4 fw-semibold link-success" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 fw-semibold link-success" href="#">About</a>
+                        </li>
+
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Categories</a></li>
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Features</a></li>
+                        <li>
+                        </li>
+                        <li><a class="nav-link mx-4 fw-semibold link-success" href="#">Contact</a></li>
+
+                    </ul>
+                    <div class="d-flex my-3">
+                        <form role="search" class="w-100 mx-1">
+                            <input id="navSearch" class="form-control me-2 w-100 rounded-pill" type="search"
+                                placeholder="Search" aria-label="Search" />
+                        </form>
+
+                        <button class="btn btn-dark rounded-circle mx-1" id="btnDark"><i
+                                class="bi bi-moon-stars"></i></button>
+                        <button class="btn btn-primary rounded-circle mx-1" id="btnLight"><i
+                                class="bi bi-brightness-high"></i></i></button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        <!-- HERO Carousel -->
+        <div class="align-content-center container">
+            <div class="align-content-center" style="background-image: linear-gradient(rgba(2, 32, 18, 0.644),rgba(2, 32, 18, 0.644)) ,url(img/8-Living-Room-Furniture-Ideas-for-Your-New-Home.jpg) ;
+        background-size: cover; background-position: bottom; margin-top: 100px; height: 550px;">
+                <div id="carouselExample" class="carousel slide position-relative">
+                    <div class="carousel-inner container w-75">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-wrap justify-content-around ">
+                                <img src="img/CHair-19_1.jpg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/Cha-2025-10-29-205026.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/pc-2025-10-29-205340.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/Caoch2025-10-29-204943.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-wrap justify-content-around ">
+                                <img src="img/Caoch2025-10-29-204943.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/pc-2025-10-29-205340.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/Cha-2025-10-29-205026.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/CHair-19_1.jpg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-wrap justify-content-around ">
+                                <img src="img/pc-2025-10-29-205340.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/CHair-19_1.jpg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/Caoch2025-10-29-204943.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                                <img src="img/Cha-2025-10-29-205026.jpeg" width="120"
+                                    class="d-block flex-md-shrink-1 mx-2 rounded-circle border border-5 bg-secondary"
+                                    alt="...">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary rounded-5" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-secondary rounded-5" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- HERO Carousel END -->
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN -->
+    <main>
+        <section class="container hero-grid">
+            <h2 class="text-success fw-bolder fs-1"
+                style="text-decoration: underline; text-underline-offset:13px; text-decoration-color: rgb(201, 201, 201); ">
+                Features</h2>
+            <!-- MAIN GRID -->
+            <div class="text-center mt-4 main-grid">
+                <div class="row">
+                    <div class="col col-9">
+                        <!-- INNER GRID  -->
+                        <div class="text-center inner-grid">
+                            <!-- 1ST ROW -->
+                            <div class="row">
+
+                                <div class="col col-12">
+                                    <div class="card mb-3 border border-0" style="max-width: 940px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <img src="img/CHair-19_1.jpg" class="img-fluid rounded-start" alt="...">
+                                            </div>
+                                            <div class="col-md-6 text-start">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-4 text-success">Your title here</h4>
+                                                    <p class="text">This is a wider card with supporting text below
+                                                        as a natural lead-in to additional content. This content is a
+                                                        little bit longer.</p>
+                                                    <p class="text"><small class="text-success">Last updated
+                                                            3 mins ago</small></p>
+                                                    <a href="#" class="btn btn-secondary rounded-pill mt-5">Get
+                                                        Offer</a>
+                                                    <div class="mt-5 d-flex justify-content-between">
+                                                        <div>
+                                                            <a href=""
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="bi bi-chat"></i> 1</a>
+                                                        </div>
+                                                        <div class="">
+                                                            <a href="#"
+                                                                class="mx-4 link-secondary link-underline-opacity-0">Share</a>
+                                                            <a href="#"
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="ri-facebook-fill mx-2"></i></a>
+                                                            <a href="#"
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="ri-twitter-fill mx-2"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="bg-secondary">
+                            <!-- 2ND ROW -->
+                            <div class="row">
+
+                                <div class="col col-12">
+                                    <div class="card my-3 border border-0" style="max-width: 940px;">
+                                        <div class="row g-0">
+
+                                            <div class="col-md-6 text-start">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-4 text-success">Your title here</h4>
+                                                    <p class="text">This is a wider card with supporting text below
+                                                        as a natural lead-in to additional content. This content is a
+                                                        little bit longer.</p>
+                                                    <p class="text"><small class="text-success">Last updated
+                                                            3 mins ago</small></p>
+                                                    <a href="#" class="btn btn-secondary rounded-pill mt-5">Get
+                                                        Offer</a>
+                                                    <div class="mt-5 d-flex justify-content-between">
+                                                        <div>
+                                                            <a href=""
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="bi bi-chat"></i> 1</a>
+                                                        </div>
+                                                        <div class="">
+                                                            <a href="#"
+                                                                class="mx-4 link-secondary link-underline-opacity-0 ">Share</a>
+                                                            <a href="#"
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="ri-facebook-fill mx-2"></i></a>
+                                                            <a href="#"
+                                                                class="link-secondary link-underline-opacity-0"><i
+                                                                    class="ri-twitter-fill mx-2"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="img/CHair-19_1.jpg" class="img-fluid rounded-start" alt="...">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="bg-secaondary">
+                            <div class="row mt-4">
+                                <div class="mb-3 mb-sm-0 col-md-6 justify-content-center text-start">
+                                    <div class="card border border-5 rounded-5 p-2">
+                                        <div class="card-body p-4">
+                                            <img src="img/Caoch2025-10-29-204943.jpeg" alt="" class="w-100 rounded-1">
+                                            <h4 class="card-title mb-4 text-success">Your title here</h4>
+                                            <p class="text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+                                            <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <a href="#" class="btn btn-secondary rounded-pill mt-2">Get
+                                                        Offer</a>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"
+                                                        class="mx-4 link-secondary link-underline-opacity-0">Share</a>
+                                                    <a href="#" class="link-secondary link-underline-opacity-0"><i
+                                                            class="ri-facebook-fill mx-2"></i></a>
+                                                    <a href="#" class="link-secondary link-underline-opacity-0"><i
+                                                            class="ri-twitter-fill mx-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 mb-sm-0 col-md-6 justify-content-center text-start">
+                                    <div class="card border border-5 rounded-5 p-2">
+                                        <div class="card-body p-4">
+                                            <img src="img/Caoch2025-10-29-204943.jpeg" alt="" class="w-100 rounded-1">
+                                            <h4 class="card-title mb-4 text-success">Your title here</h4>
+                                            <p class="text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+                                            <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <a href="#" class="btn btn-secondary rounded-pill mt-2">Get
+                                                        Offer</a>
+                                                </div>
+                                                <div>
+                                                    <a href="#"
+                                                        class="mx-4 link-secondary link-underline-opacity-0">Share</a>
+                                                    <a href="#" class="link-secondary link-underline-opacity-0"><i
+                                                            class="ri-facebook-fill mx-2"></i></a>
+                                                    <a href="#" class="link-secondary link-underline-opacity-0"><i
+                                                            class="ri-twitter-fill mx-2"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- INNER GRID END  -->
+
+                    </div>
+                    <!-- RIGHT PANEL -->
+                    <div class="col col-3 border border-2 rounded-5 border-secondary px-0 right-panel position-relative"
+                        id="rightPanel">
+
+                        <div class="mt-3 mb-5 mx-2 px-3">
+                            <h2 class="text-start text-secondary"
+                                style="text-decoration: underline; text-underline-offset:13px; text-decoration-color: rgb(201, 201, 201);">
+                                News Letter</h2>
+
+                            <div class="mt-4 d-flex justify-content-center">
+                                <input type="email" class="form-control my-3 rounded-pill w-100"
+                                    id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="my-2">
+                                <button class="btn btn-success w-100 rounded-pill mb-5">Sign Up</button>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3 mx-2 px-2">
+                            <h2 class="text-start text-secondary"
+                                style="text-decoration: underline; text-underline-offset:13px; text-decoration-color: rgb(201, 201, 201);">
+                                Your Title</h2>
+                            <div class="row mt-5">
+                                <div class="col mt-5">
+                                    <img src="img/pc-2025-10-29-205340.jpeg" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+
+                                </div>
+                                <div class="col mt-5"><img src="img/Cha-2025-10-29-205026.jpeg" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col mt-5">
+                                    <img src="img/Cha-2025-10-29-205026.jpeg" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+                                </div>
+
+                                <div class="col mt-5">
+                                    <img src="img/pc-2025-10-29-205340.jpeg" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="row mt-5 mb-5">
+                                <div class="col mt-5">
+                                    <img src="img/pc-2025-10-29-205340.jpeg" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+
+                                </div>
+                                <div class="col mt-5"><img src="img/Cha-2025-10-29-205026.jpeg" style="max-width: 134px; max-height: 134px;" width="134" height="134" style="max-width: 134px; max-height: 130px;"
+                                        class="rounded-circle border border-3 shadow" alt="">
+                                    <h6 class="mt-1 text-center text-secondary">Title, Caption</h6>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="mx-0 px-0 py-1 bg-success position-relative"
+                            style="min-height: 160px ; bottom: -110px; right: 2px; max-width: 332px;">
+                            <div class="position-relative" style="bottom: -20px;">
+                                <h2 class="text-start text-light text-decoration-underline px-4"
+                                    style="text-underline-offset: 10px;">Follow</h2>
+
+                                <div class="d-flex flex-wrap justify-content-around mb-5 pb-1 position-relative "
+                                    style="bottom: 0px;">
+                                    <a href="#" class="mx-2 mt-4 text-light fs-1"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="mx-2 mt-4 text-light fs-1"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="mx-2 mt-4 text-light fs-1"><i class="bi bi-pinterest"></i></a>
+                                    <a href="#" class="mx-2 mt-4 text-light fs-1"> <i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- RIGHT PANEL END -->
+
+                </div>
+            </div>
+            <!-- MAIN GRID END  -->
+
+
+
+
+
+        </section>
+    </main>
+    <!-- MAIN END  -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="text-center fw-semibold mt-3">
+            <p class="text">All Copyrights Reserved &copy;<a
+                    href="https://www.linkedin.com/in/ahmed-elromaissy-455408228/">ROMAISSY</a></p>
+        </div>
+    </footer>
+    <!-- FOOTER END  -->
+
+    <!-- JScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- ---------------------------------------- -->
+
+    <script src="script.js"></script>
+    <!-- JScript -->
+
+</body>
+
+</html>
